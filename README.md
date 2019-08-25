@@ -55,7 +55,7 @@ jfrog rt c --url=http://localhost:8081/artifactory --user=admin --password=passw
 
 Otherwise you can specify the complete url
 ```xml
-<url>croaker:http://localhost:8081/artifactorylibs-release-local</url>
+<url>croaker:http://localhost:8081/artifactory/libs-release-local</url>
 ```
 In this case the credentials have to be provided in the settings.xml
 ```xml
