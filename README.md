@@ -37,6 +37,7 @@ pom.xml of your project
 
 There are different ways to create the url of the repository in the deployment 
 
+pom.xml of your project
 ```xml
 	<distributionManagement>
 		<repository>
@@ -59,10 +60,36 @@ Otherwise you can specify the complete url
 In this case the credentials have to be provided in the settings.xml
 ```xml
 	<servers>
-    <server>
+		<server>
 			<id>artifactory-local</id>
 			<username>admin</username>
 			<password>password</password>
 		</server>
 	</servers>
 ```
+## Dependency
+Resolving dependencies works similar. The creation of the url remains the same as for deployment:
+
+pom.xml of your project
+```xml
+	<repositories>
+		<repository>
+			<id>artifactory-local</id>
+			<url>croaker:repo://libs-release-local</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+		</repository>
+	</repositories>
+```
+
+###Disclaimer
+
+JFrog and Artifactory are trademarks registered by the JFrog LTD
+
+This wagon is not provided by JFrog.
