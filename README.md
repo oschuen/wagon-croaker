@@ -88,7 +88,7 @@ pom.xml of your project
 	</repositories>
 ```
 
-###Disclaimer
+### Disclaimer
 
 JFrog and Artifactory are trademarks registered by the JFrog LTD
 
