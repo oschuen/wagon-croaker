@@ -1,6 +1,6 @@
 # wagon-croaker
 
-This is a maven wagon implementation using the [JFrog CLI tool](https://www.jfrog.com/confluence/display/CLI/JFrog+CLI) to upload and download artifacts stored in an [Artifactory](https://jfrog.com/artifactory) repository.
+This is a [maven wagon](https://maven.apache.org/wagon/) implementation using the [JFrog CLI tool](https://www.jfrog.com/confluence/display/CLI/JFrog+CLI) to upload and download artifacts stored in an [Artifactory](https://jfrog.com/artifactory) repository.
 
 ## Extension
 
