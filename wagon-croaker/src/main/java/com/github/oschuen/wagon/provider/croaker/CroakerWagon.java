@@ -72,7 +72,7 @@ public class CroakerWagon extends AbstractWagon {
 		fireGetStarted(resource, destination);
 
 		try {
-			final String[] args = { getUrl().getRepo() + "/" + resourceName,
+			final String[] args = { "--flat=true", getUrl().getRepo() + "/" + resourceName,
 					destination.getCanonicalPath() };
 			executeCommand("dl", args, false);
 		} catch (final Exception e) {
@@ -215,6 +215,9 @@ public class CroakerWagon extends AbstractWagon {
 
 	@Override
 	protected void openConnectionInternal() throws ConnectionException, AuthenticationException {
+		// final Debug debug = new Debug();
+		// addSessionListener(debug);
+
 		if (authenticationInfo == null) {
 			authenticationInfo = new AuthenticationInfo();
 		}
