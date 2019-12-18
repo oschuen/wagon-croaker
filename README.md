@@ -8,20 +8,6 @@ To use the wagon it needs to be provided as build-extension:
 
 pom.xml of your project
 ```xml
-	<pluginRepositories>
-		<pluginRepository>
-			<id>wagon-croaker-mvn-repo</id>
-			<url>https://raw.github.com/oschuen/wagon-croaker/mvn-repo/</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</releases>
-		</pluginRepository>
-	</pluginRepositories>
 	<build>
 		<extensions>
 			<extension>
